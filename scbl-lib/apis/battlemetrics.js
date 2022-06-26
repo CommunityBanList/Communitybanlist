@@ -11,6 +11,12 @@ const makeRequest = new Bottleneck({
   reservoirRefreshAmount: BATTLEMETRICS_API_RESERVIOR,
   reservoirRefreshInterval: 60 * 1000
 }).wrap(async (method, endpoint, params, data) => {
+  axios.interceptors.response.use(function (response) {
+    return response;
+  }, function (error) {
+    //add proper Error reporting here, maybe sentry so that the error does at least show up somewhere
+    return Promise.reject(false);
+  });
   return axios({
     method,
     url: 'https://api.battlemetrics.com/' + endpoint,
