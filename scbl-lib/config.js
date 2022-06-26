@@ -14,12 +14,12 @@ const JWT_AUTH = {
 const BATTLEMETRICS_API_KEY = process.env.BATTLEMETRICS_API_KEY;
 const BATTLEMETRICS_API_RESERVIOR = process.env.BATTLEMETRICS_API_RESERVIOR || 10;
 
-const BATTLEMETRICS_ORGANIZATION = '14987';
+const BATTLEMETRICS_ORGANIZATION = process.env.BATTLEMETRICS_ORGANIZATION || '56746';
 
 const STEAM_API_KEY = process.env.STEAM_API_KEY;
 
 // Other constants
-const DISCORD_INVITE = 'https://discord.gg/DjrpPuw';
+const DISCORD_INVITE = process.env.DISCORD_INVITE || 'https://discord.gg/M7Cd5wSqp7';
 
 export {
   HOST,
