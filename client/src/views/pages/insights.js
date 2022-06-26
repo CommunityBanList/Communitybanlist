@@ -15,7 +15,7 @@ export default function () {
               </div>
               <h6 className="text-primary text-uppercase">Insights</h6>
               <p className="description mt-2">
-                Get insights on how healthy the Squad community is by exploring trends in our data.
+                Get insights on how healthy our Partner communities are by exploring trends in our data.
               </p>
             </CardBody>
             <CardBody className="text-center">

@@ -195,7 +195,7 @@ function Foreword(props) {
   );
 }
 
-function WhatIsTheSquadCommunityBanList(props) {
+function WhatIsCommunityBanList(props) {
   return (
     <>
       <Row>
@@ -248,7 +248,7 @@ function WhatIsTheSquadCommunityBanList(props) {
   );
 }
 
-function GettingUnlistedFromTheSquadCommunityBanList(props) {
+function GettingUnlistedFromCommunityBanList(props) {
   return (
     <>
       <Row>
@@ -318,7 +318,7 @@ function GettingUnlistedFromTheSquadCommunityBanList(props) {
   );
 }
 
-function GettingUnbannedFromTheSquadCommunityBanList(props) {
+function GettingUnbannedFromCommunityBanList(props) {
   return (
     <>
       <Row>
@@ -509,9 +509,9 @@ export default function (props) {
                   <StepWizard>
                     {!isValidSteam64ID && <EnterSteamUser />}
                     <Foreword steamUser={data?.steamUser} isValidSteam64ID={isValidSteam64ID} />
-                    <WhatIsTheSquadCommunityBanList />
-                    <GettingUnlistedFromTheSquadCommunityBanList steamUser={data?.steamUser} />
-                    <GettingUnbannedFromTheSquadCommunityBanList steamUser={data?.steamUser} />
+                    <WhatIsCommunityBanList />
+                    <GettingUnlistedFromCommunityBanList steamUser={data?.steamUser} />
+                    <GettingUnbannedFromCommunityBanList steamUser={data?.steamUser} />
                     <ReportPartnerOrganisations />
                     <FurtherHelp steamUser={data?.steamUser} />
                   </StepWizard>

@@ -10,10 +10,10 @@ import Layout from '../layout/layout.js';
 
 const sections = [
   {
-    name: 'Squad Community Ban List Basics',
+    name: 'CommunityBanList.com Basics',
     questions: [
       {
-        question: 'What is the Squad Community Ban List?',
+        question: 'What is the CommunityBanList.com?',
         answer: (
           <>
             CommunityBanList.com is a community-led project that aims to protect the partner
@@ -25,10 +25,10 @@ const sections = [
         )
       },
       {
-        question: 'How often is the Squad Community Ban List updated?',
+        question: 'How often is CommunityBanList.com updated?',
         answer: (
           <>
-            The Squad Community Ban List updates automatically every 6 hours, however, some
+            CommunityBanList.com updates automatically every 6 hours, however, some
             information is updated less frequently. Steam user profile information is updated every
             7 days or when we import new or updated bans belonging to that user.
           </>
@@ -38,8 +38,8 @@ const sections = [
         question: 'What are "reputation points"?',
         answer: (
           <>
-            "Points" is a term you will frequently hear in reference to the Squad Community Ban
-            List. Points are used to represent how bad a reputation a player has based on bans they
+            "Points" is a term you will frequently hear in reference to the CommunityBanList.com. 
+            Points are used to represent how bad a reputation a player has based on bans they
             have on our partner organisation's ban lists. By default, active and expired bans will
             contribute 3 and 1 points respectively. Only one active ban per ban list is counted.
           </>
@@ -49,8 +49,9 @@ const sections = [
         question: 'What is a "risk rating"?',
         answer: (
           <>
-            "Risk rating" is 0-10 rating of how much of a risk of harming the Squad community's
-            integrity a player is. The algorithm used to calculate the "risk rating" is still
+            "Risk rating" is 0-10 rating used by our partner communities to approximate how harmful 
+            a potential player may be. 
+            The algorithm used to calculate the "risk rating" is still
             experimental and is subject to change.
           </>
         )
@@ -59,10 +60,9 @@ const sections = [
         question: 'What is a "risk ranking"?',
         answer: (
           <>
-            "Risk ranking" is a ranking of players most at risk of harming the Squad community's
-            integrity. It is based on player's reputation points where rank #1 is the player with
-            the most reputation points and therefore the most likely to harm the Squad community's
-            integrity.
+            "Risk ranking" is a ranking of players most at risk of harming our Partner communities.
+            It is based on player's reputation points where rank #1 is the player with
+            the most reputation points and therefore the most likely to harm our Partner communities
           </>
         )
       },
@@ -70,7 +70,7 @@ const sections = [
         question: 'How are ban reasons assigned?',
         answer: (
           <>
-            The Squad Community Ban List assigns ban reasons to one or more categorises based on
+            CommunityBanList.com assigns ban reasons to one or more categorises based on
             keywords/phrases found in the ban reasons assigned by our partner organisations. We do
             this to ensure they are easily read and analysed, consistent, professional and to
             protect any confidential information. Our keywords and phrases are not perfect so there
@@ -82,7 +82,7 @@ const sections = [
         question: 'Why have I been banned for an "Unknown" reason?',
         answer: (
           <>
-            The Squad Community Ban List assigns ban reasons to one or more categorises based on
+            CommunityBanList.com List assigns ban reasons to one or more categorises based on
             keywords/phrases found in the ban reasons assigned by our partner organisations. Our
             keywords and phrases are not perfect so there may be a small number of scenarios where
             ban reasons cannot be categorised so the reason is shown as "Unknown". This does

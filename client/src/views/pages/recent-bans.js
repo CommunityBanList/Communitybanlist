@@ -75,9 +75,9 @@ export default function () {
                       delay={0}
                       target="tooltip-reason-recent-bans"
                     >
-                      The ban reasons shown on the Squad Community Ban List are based on
-                      keywords found in the reason and notes listed on partner organisations' ban
-                      lists. We cannot guarantee that the reasons displayed reflect the true reason for
+                      The ban reasons shown on CommunityBanList.com are based on keywords 
+                      found in the reason and notes listed on partner organisations' ban lists.
+                      We cannot guarantee that the reasons displayed reflect the true reason for
                       the ban. Please see our FAQ for more information.
                     </UncontrolledTooltip>
                   </th>
@@ -92,8 +92,8 @@ export default function () {
                       delay={0}
                       target="tooltip-time-recent-bans"
                     >
-                      The ban times shown on the Squad Community Ban List are based on the dates
-                      listed on partner organisations' ban lists. In the case of remote ban lists,
+                      The ban times shown on CommunityBanList.com are based on the dates listed
+                      on partner organisations' ban lists. In the case of remote ban lists,
                       where ban creation dates are not documented, the time shown is the time when we
                       first imported the ban.
                     </UncontrolledTooltip>

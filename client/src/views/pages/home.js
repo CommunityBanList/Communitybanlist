@@ -41,7 +41,7 @@ export default function () {
                     harmful players.
                   </h1>
                   <p className="lead text-white">
-                    The Squad Community Ban List aims to protect the Squad community's integrity
+                    CommunityBanList.com aims to protect our Partner Organisations
                     through collaboration and information sharing.
                   </p>
                   <SteamUserSearchBox className="mt-5" frontpageVersion={true} />
@@ -77,7 +77,7 @@ export default function () {
                       <h6 className="text-primary text-uppercase">Explore</h6>
                       <p className="description mt-3">
                         Explore our database containing over 47,000 bans and 34,000 banned players
-                        from various popular Squad servers.
+                        from various popular Partner servers.
                       </p>
                       <div>
                         <Badge color="primary" pill className="mr-1">
@@ -104,7 +104,7 @@ export default function () {
                       </div>
                       <h6 className="text-info text-uppercase">Benefit</h6>
                       <p className="description mt-3">
-                        Benefit from our database by using it to protect your Squad server from
+                        Benefit from our database by using it to protect your game server from
                         harmful players.
                       </p>
                       <div>
@@ -129,7 +129,7 @@ export default function () {
                       </div>
                       <h6 className="text-success text-uppercase">Contribute</h6>
                       <p className="description mt-3">
-                        Contribute ban information from your Squad server to help us in the fight
+                        Contribute ban information from your game server to help us in the fight
                         against harmful players.
                       </p>
                       <div>
@@ -165,7 +165,7 @@ export default function () {
                 <h3>Explore</h3>
                 <p>
                   Our database contains information on over 47,000 bans and 34,000 banned players
-                  from various popular Squad servers. We regularly update the database to allow you
+                  from various popular Partner Organisations. We regularly update the database to allow you
                   to proactively defend your server from harmful players.
                 </p>
                 <ul className="list-unstyled mt-5">
@@ -240,7 +240,7 @@ export default function () {
               <Card className="shadow shadow-lg--hover my-5">
                 <CardBody>
                   <blockquote className="blockquote font-italic mb-0">
-                    "The Squad Community Ban List provides us with a valuable source of intel that
+                    "CommunityBanList.com provides us with a valuable source of intel that
                     allows us to make more informed decisions when banning players from our server."
                   </blockquote>
                 </CardBody>
@@ -340,7 +340,7 @@ export default function () {
               <Card className="shadow shadow-lg--hover my-5">
                 <CardBody>
                   <blockquote className="blockquote font-italic mb-0">
-                    "Using the Squad Community Ban List allows our admins to spend more time
+                    "Using CommunityBanList.com allows our admins to spend more time
                     enjoying the game and less time dealing with players trying to harm our server."
                   </blockquote>
                 </CardBody>
@@ -372,7 +372,7 @@ export default function () {
                 <h3>Contribute</h3>
                 <p>
                   Our success depends on the collaboration and information sharing between various
-                  popular Squad servers. Join us in the fight against harmful players!
+                  popular Partner Organisations. Join us in the fight against harmful players!
                 </p>
                 <ul className="list-unstyled mt-5">
                   <li className="py-2">
@@ -425,8 +425,8 @@ export default function () {
               <Card className="shadow shadow-lg--hover my-5">
                 <CardBody>
                   <blockquote className="blockquote font-italic mb-0">
-                    "Contributing to the Squad Community Ban List is easy and we're happy to know
-                    that our contributions are helping to protect the wider Squad community."
+                    "Contributing to CommunityBanList.com is easy and we're happy to know
+                    that our contributions are helping to protect our Partners and their communities."
                   </blockquote>
                 </CardBody>
               </Card>
@@ -452,7 +452,7 @@ export default function () {
             <Col xs="12">
               <h2 className="display-3">Our Principles</h2>
               <p className="lead">
-                The Squad Community Ban List aims to protect the Squad community's integrity through
+                CommunityBanList.com List aims to protect Partner communities integrity through
                 collaboration and information sharing, however, whilst doing this we follow the
                 following principles.
               </p>
@@ -466,7 +466,7 @@ export default function () {
               <h5 className="mt-3">Collaboration</h5>
               <p className="mt-3">
                 We bring communities and individuals together to work towards the same goal, to
-                protect the Squad community.
+                protect their communities.
               </p>
             </Col>
             <Col lg="4">
