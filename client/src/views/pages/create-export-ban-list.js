@@ -20,7 +20,7 @@ export default function () {
               </div>
               <h6 className="text-info text-uppercase">Export Ban Lists</h6>
               <p className="description mt-2">
-                Configure and generate ban lists from out database that preemptively ban harmful
+                Configure and generate ban lists from our database that preemptively ban harmful
                 players before they have a chance to harm your community.
               </p>
             </CardBody>

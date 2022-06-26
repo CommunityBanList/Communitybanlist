@@ -65,7 +65,7 @@ export default function (props) {
                 />
                 <FormText>
                   Please provide us with the name of your community/server so we can see who is
-                  using SCBL.
+                  using CBL.
                 </FormText>
                 <FormFeedback>{errors.server?.message}</FormFeedback>
               </FormGroup>
