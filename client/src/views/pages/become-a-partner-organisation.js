@@ -17,17 +17,16 @@ export default function () {
               </div>
               <h6 className="text-success text-uppercase">Become a Partner Organisation</h6>
               <p className="description mt-2">
-                Join the fight against harmful players by contributing ban information to the Squad
-                Community Ban List!
+                Join the fight against harmful players by contributing ban information to 
+                CommunityBanList.com!
               </p>
             </CardBody>
             <CardBody>
               <h5>Introduction to Partner Organisations</h5>
               <p>
-                Partner organisations are Squad communities that contribute ban information from
-                their server's ban lists to the Squad Community Ban List database. Any Squad
-                community can become a partner organisation providing they have an active Squad
-                server licensed by Offworld Industries.
+                Partner organisations are gaming communities that contribute ban information from
+                their server's ban lists to the CommunityBanList.com database. Any Gaming 
+                community can become a partner organisation providing they apply and are accepted on our discord
               </p>
               <p>
                 Becoming a partner organisation requires very little effort. We simply request the
@@ -45,8 +44,8 @@ export default function () {
               <p>
                 There are currently no benefits to being a partner organisation, however, everyone
                 benefits from our partner organisations as the more partner organisations that
-                contribute information on players the more effective the Squad Community Ban List
-                becomes in protecting the integrity of the Squad community so, please consider
+                contribute information on players the more effective CommunityBanList.com
+                becomes in protecting the integrity of our partner's communities so, please consider
                 contributing to thank others for their contributions.
               </p>
               <h5>Form</h5>

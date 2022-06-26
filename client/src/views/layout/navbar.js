@@ -159,7 +159,7 @@ class DemoNavbar extends React.Component {
                           <Media body className="ml-3">
                             <h5 className="heading text-primary mb-md-1">Insights</h5>
                             <p className="description d-none d-md-inline-block mb-0">
-                              Get insights on how healthy the Squad community is by exploring trends
+                              Get insights on how healthy game communities are by exploring trends
                               in our data.
                             </p>
                           </Media>
@@ -230,7 +230,7 @@ class DemoNavbar extends React.Component {
                             </h6>
                             <p className="description d-none d-md-inline-block mb-0">
                               Join the fight against harmful players by contributing ban information
-                              to the Squad Community Ban List!
+                              to the Community Ban List!
                             </p>
                           </Media>
                         </Media>
@@ -246,7 +246,7 @@ class DemoNavbar extends React.Component {
                           <Media body className="ml-3">
                             <h6 className="heading text-github mb-md-1">GitHub</h6>
                             <p className="description d-none d-md-inline-block mb-0">
-                              The Squad Community Ban List is an open source project anyone can
+                              Community Ban List is an open source project anyone can
                               contribute to. Find out more on our GitHub!
                             </p>
                           </Media>
@@ -294,7 +294,7 @@ class DemoNavbar extends React.Component {
                           <Media body className="ml-3">
                             <h6 className="heading text-warning mb-md-1">I'm banned, what now?</h6>
                             <p className="description d-none d-md-inline-block mb-0">
-                              Get information on how to get unlisted from or unbanned by the Squad Community Ban List.
+                              Get information on how to get unlisted from or unbanned by Community Ban List.com
                             </p>
                           </Media>
                         </Media>

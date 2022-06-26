@@ -160,20 +160,20 @@ function Foreword(props) {
           </p>
           <p>
             If you have been directed to this page then it likely means that you are listed on and
-            potentially banned by the Squad Community Ban List.
+            potentially banned by CommunityBanList.com
           </p>
           <p>
-            The Squad Community Ban List is dedicated to helping create a healthy Squad community
-            that everyone can enjoy, including players that were previously harmful to the community
+            CommunityBanList.com is dedicated to helping Our Partners create healthy communities
+            that everyone can enjoy, including players that were previously harmful to their community
             and have since reformed. Therefore, we are keen to assist players in being able to
-            access the Squad community without the Squad Community Ban List limiting where they can
+            access our partner community without CommunityBanList.com limiting where they can
             and cannot play. However, there are limits in what we can do to assist these players due
             to our strict operating procedures.
           </p>
           <p>
-            The information provided on the following pages will give you more information on the
-            Squad Community Ban List as well as information on how you can go about getting yourself
-            unlisted from and unbanned by the Squad Community Ban List.
+            The information provided on the following pages will give you more information on
+            CommunityBanList.com as well as information on how you can go about getting yourself
+            unlisted from and unbanned by the our partner communities.
           </p>
         </Col>
       </Row>
@@ -200,27 +200,27 @@ function WhatIsTheSquadCommunityBanList(props) {
     <>
       <Row>
         <Col>
-          <h3 className="text-center">About the Squad Community Ban List</h3>
+          <h3 className="text-center">About the CommunityBanList.com</h3>
           <h6>Introduction</h6>
           <p>
-            The Squad Community Ban List is a community-led project that aims to protect the Squad
-            community's integrity through collaboration and information sharing. It is{' '}
+            CommunityBanList.com is a community-led project that aims to protect our partner
+            communities integrity through collaboration and information sharing. It is{' '}
             <strong>not</strong> affiliated with Offworld Industries, the creators of Squad, and
-            they have little to no influence in regards to how the Squad Community Ban List is
+            they have little to no influence in regards to how CommunityBanList.com is
             operated.
           </p>
           <h6>How Does It Work?</h6>
           <p>
-            The Squad Community Ban List works with a number of "partner organisations", who are
-            Squad communities licensed to operate Squad servers by Offworld Industries, who provide
-            us with access to their ban lists. At regular intervals, our fully automated system
-            downloads a copy of the bans on their ban lists and stores them in our database. We then
-            provide others with access to the data in our database via this website, Discord bots
-            and other channels.
+            CommunityBanList.com works with a number of "partner organisations", who are
+            gaming communities that provide us with access to their ban lists.
+
+            At regular intervals, our fully automated system downloads a copy of the bans on their
+            ban lists and stores them in our database. We then provide others with access to the data
+            in our database via this website, Discord bots and other channels.
           </p>
           <h6>Only Facts!</h6>
           <p>
-            The Squad Community Ban List only shares facts regarding players based on the bans we
+            CommunityBanList.com only shares facts regarding players based on the bans we
             import from our partner organisations' ban lists and we do not make or share opinions
             based on the bans we import. Therefore, we will always share the bans we import to our
             users regardless of whether we think the ban is or isn't valid and will only ever remove
@@ -253,25 +253,26 @@ function GettingUnlistedFromTheSquadCommunityBanList(props) {
     <>
       <Row>
         <Col>
-          <h3 className="text-center">Getting unlisted from the Squad Community Ban List</h3>
+          <h3 className="text-center">Getting unlisted from CommunityBanList.com</h3>
           <p>
-            If a player has been listed on the Squad Community Ban List's website, it does not necessarily mean that
-            they have been banned by the Squad Community Ban List. It only means that we have imported a ban against
-            them from one of our partner organisations.
+            If a player has been listed on our website, it does not necessarily mean that
+            they have been banned from all our partner organisation. 
+            It only means that we have imported a ban against them from one of our 
+            partner organisations.
           </p>
           <p>
-            As previously mentioned, the Squad Community Ban List only shares facts regarding
+            As previously mentioned, CommunityBanList.com only shares facts regarding
             players based on the bans we import from our partner organisations' ban lists and will
             only ever remove players/bans we share when our partner organisations remove them from
             their ban lists. As it is unlikely that partner organisation will delete the bans from
-            your history it is unlikely that you will be unlisted from the Squad Community Ban List.
+            your history it is unlikely that you will be unlisted from CommunityBanList.com
             However, partner organisations may agree to turn some of your active bans to expired bans.
           </p>
           {props.steamUser && props.steamUser.bans.length === 0 && (
             <>
               <h6>Partner organisations to Contact</h6>
               <p>
-                Fortunately, you are not listed on the Squad Community Ban List and therefore do not
+                Fortunately, you are not listed on our website and therefore do not
                 need to contact any partner organisations.
               </p>
             </>
@@ -280,7 +281,7 @@ function GettingUnlistedFromTheSquadCommunityBanList(props) {
             <>
               <h6>Partner organisations to Contact</h6>
               <p>
-                To be unlisted from the Squad Community Ban List you should contact the following
+                To be unlisted from CommunityBanList.com you should contact the following
                 partner organisations. You may click their names to get a link to their Discord
                 server.
               </p>
@@ -322,22 +323,22 @@ function GettingUnbannedFromTheSquadCommunityBanList(props) {
     <>
       <Row>
         <Col>
-          <h3 className="text-center">Getting unbanned from the Squad Community Ban List</h3>
+          <h3 className="text-center">Getting unbanned from the CommunityBanList.com</h3>
           <p>
-            Squad servers may opt to use a Squad Community Ban List export ban list to protect their
-            community. If you have been kicked from a server with a reason relating to the Squad
-            Community Ban List then it means that you have probably met the criteria to be listed on
+            Partner Organisations may opt to use an export ban list to protect their
+            community. If you have been kicked from a server with a reason relating to our website 
+            then it means that you have probably met the criteria to be listed on
             one of these export ban lists. Below we will explain these criteria and explain how you
-            can attempt to get removed from our export ban lists.
+            can attempt to get removed from our Partner's export ban lists.
           </p>
           <h6>Criteria System</h6>
           <p>
-            Our criteria system uses a point based system that each Squad server can configure when
+            Our criteria system uses a point based system that each Partner can configure when
             creating an export ban list. Bans listed on our website will contribute a number of
             points which can be configured to be different depending on whether they were are active
             or expired, their age and who's ban list they belong to. Once the total number of points
             a player has exceeds the configurable threshold, they will be added to the export ban list
-            and banned from the server as a result.
+            and banned from that partner's servers as a result.
           </p>
           <p>
             Consider the following example using our default points. Bob has 2 active bans that
@@ -345,10 +346,9 @@ function GettingUnbannedFromTheSquadCommunityBanList(props) {
             total number of points 10 which exceeds the default threshold of 9 and therefore Bob
             will be added to the export ban list.
           </p>
-          <h6>Getting Unbanned from the Squad Community Ban List</h6>
+          <h6>Getting Unbanned from  CommunityBanList.com</h6>
           <p>
-            There are a number of different ways of getting unbanned from the Squad Community Ban
-            List:
+            There are a number of different ways of getting unbanned from CommunityBanList.com:
           </p>
           <ul className="font-weight-light">
             <li>
@@ -361,8 +361,8 @@ function GettingUnbannedFromTheSquadCommunityBanList(props) {
               Battlemetrics.
             </li>
             <li>
-              Play on another server. Only a small number of Squad servers use the Squad Community
-              Ban List and therefore there should be a wide range of others servers that you can
+              Play on another server. Only a small number of Partners use CommunityBanList.com
+              and therefore there should be a wide range of others servers that you can
               play on.
             </li>
           </ul>
@@ -412,36 +412,7 @@ function ReportPartnerOrganisations(props) {
       <Row>
         <Col>
           <h3 className="text-center">Reporting Partner Organisations</h3>
-          <h6>Reporting Partner Organisations to Offworld Industries</h6>
-          <p>
-            If you believe that one of our partner organisations has breached one Offworld
-            Industries' server licensing guidelines or Offworld Industries' Code of Conduct by
-            banning you, then you may wish to consider reporting them to Offworld Industries.
-          </p>
-          <p>
-            To do this, email{' '}
-            <a
-              href="mailto:Licensing@offworldindustries.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Licensing@offworldindustries.com
-            </a>{' '}
-            with the following details:
-          </p>
-          <ul className="font-weight-light">
-            <li>The name of the server.</li>
-            <li>Any evidence, such as videos and pictures.</li>
-            <li>Date and time of the incident.</li>
-          </ul>
-          <p>
-            Alternatively/additionally you can fill out the following their report form located{' '}
-            <a href="https://forms.gle/R3D434WVuaY9obtT6" target="_blank" rel="noopener noreferrer">
-              here
-            </a>
-            .
-          </p>
-          <h6>Reporting Partner Organisations to the Squad Community Ban List</h6>
+          <h6>Reporting Partner Organisations to CommunityBanList.com</h6>
           <p>
             Our system has methods to prevent a single partner organisation abusing our system to
             ban you from other servers. However, if you believe that a partner organisation has
@@ -512,7 +483,7 @@ export default function (props) {
               </div>
               <h6 className="text-warning text-uppercase">I'm banned, what now?</h6>
               <p className="description mt-2">
-                Get information on how to get unlisted from or unbanned by the Squad Community Ban List.
+                Get information on how to get unlisted from or unbanned by CommunityBanList.com
               </p>
             </CardBody>
             <CardBody>

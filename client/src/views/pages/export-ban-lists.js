@@ -50,7 +50,7 @@ export default function () {
               </div>
               <h6 className="text-info text-uppercase">Export Ban Lists</h6>
               <p className="description mt-2">
-                Protect your Squad server with our configurable export ban lists that preemptively
+                Protect your Organisations server's with our configurable export ban lists that preemptively
                 ban the most harmful players from your server before they have the chance to cause
                 any harm.
               </p>
@@ -131,9 +131,9 @@ export default function () {
                                         </p>
                                       </>
                                     )}
-                                    <h6>Remote Ban List</h6>
+                                    <h6>Remote Ban List for Squad</h6>
                                     <p>
-                                      To use this export ban list within your Squad server the
+                                      To use this export ban list within your server the
                                       following URL can be added as a remote ban list on your
                                       server:
                                     </p>
