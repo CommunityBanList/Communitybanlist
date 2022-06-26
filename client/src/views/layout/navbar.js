@@ -236,7 +236,7 @@ class DemoNavbar extends React.Component {
                         </Media>
                         <Media
                           className="d-flex align-items-center"
-                          href="https://github.com/Thomas-Smyth/Squad-Community-Ban-List"
+                          href="https://github.com/CommunityBanList/Communitybanlist"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -321,7 +321,7 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://github.com/Thomas-Smyth/Squad-Community-Ban-List"
+                      href="https://github.com/CommunityBanList/Communitybanlist"
                       id="tooltip-github"
                       target="_blank"
                       rel="noopener noreferrer"
