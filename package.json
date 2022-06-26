@@ -1,8 +1,8 @@
 {
   "name": "Communitybanlist",
-  "version": "2.0.0",
-  "repository": "https://github.com/CommunityBanList/Communitybanlist.git",
-  "author": "Community Ban List <https://github.com/CommunityBanList>",
+  "version": "1.0.0",
+  "repository": "https://github.com/Communitybanlist/Communitybanlist.git",
+  "author": "Community Ban List <https://github.com/Communitybanlist>",
   "license": "MIT",
   "private": true,
   "workspaces": [
