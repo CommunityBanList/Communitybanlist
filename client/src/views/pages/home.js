@@ -499,78 +499,10 @@ export default function () {
               <h2 className="display-3">Our Team</h2>
               <p className="lead">
                 We have a small team of individuals who keep our systems running and help
-                orchestrate collaboration between partner organisations.
+                orchestrate collaboration between partner organisations. You can find them on our
+                github
               </p>
             </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col md="4" className="mb-5">
-              <div className="px-4">
-                <div className="pt-4 text-center">
-                  <h5 className="title">
-                    <span className="d-block mb-1">Tommy</span>
-                    <small className="h6">Project Lead & Developer</small>
-                  </h5>
-                </div>
-              </div>
-            </Col>
-            <Col md="4" className="mb-5">
-              <div className="px-4">
-                <div className="pt-4 text-center">
-                  <h5 className="title">
-                    <span className="d-block mb-1">LeventHAN</span>
-                    <small className="h6">Developer</small>
-                  </h5>
-                </div>
-              </div>
-            </Col>
-            <Col md="4" className="mb-5">
-              <div className="px-4">
-                <div className="pt-4 text-center">
-                  <h5 className="title">
-                    <span className="d-block mb-1">got2bhockey</span>
-                    <small className="h6">Developer</small>
-                  </h5>
-                </div>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Card className="bg-gradient-info shadow-lg border-0">
-              <div className="p-5">
-                <Row className="align-items-center">
-                  <Col lg="8">
-                    <h4 className="text-white">Also by Us... SquadJS</h4>
-                    <p className="text-white mt-3">
-                      SquadJS is an open source framework, designed for Squad servers, that aims to make communicating with
-                      Squad servers simple. Unlike other tools, that only collect data through limited means, SquadJS employs a
-                      more advanced data collection techniques allowing it to expose a greater variety of data points, such as
-                      kill logs. Shipped with SquadJS are a number of different plugins, built by our community, that do a
-                      range of different tasks, such as map voting and player statistics. However, SquadJS is designed to be
-                      easy to build upon allowing you to easily create plugins for tasks you want automated.
-                    </p>
-                  </Col>
-                  <Col className="ml-lg-auto text-center" lg="3">
-                    <img
-                      alt="SquadJS Logo"
-                      src="https://raw.githubusercontent.com/Thomas-Smyth/SquadJS/master/assets/squadjs-logo-white.png"
-                      className="mb-3"
-                      width="200px"
-                    />
-                    <Button
-                      block
-                      className="btn-white"
-                      color="github"
-                      href="https://github.com/Thomas-Smyth/SquadJS"
-                      size="lg"
-                    >
-                      <i className="fab fa-github mr-2" />
-                      View on GitHub
-                    </Button>
-                  </Col>
-                </Row>
-              </div>
-            </Card>
           </Row>
         </Container>
       </section>

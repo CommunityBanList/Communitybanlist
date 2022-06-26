@@ -16,13 +16,11 @@ const sections = [
         question: 'What is the Squad Community Ban List?',
         answer: (
           <>
-            The Squad Community Ban List is a community-led project that aims to protect the Squad
-            community's integrity through collaboration and information sharing. It does this by
-            importing ban information from various popular Squad servers, known as our partner
+            CommunityBanList.com is a community-led project that aims to protect the partner
+            communities through collaboration and information sharing. It does this by
+            importing ban information from various popular servers, known as our partner
             organisations, into a database and providing functionality to search and export the data
-            or aggregations of the data in a number of different formats. The project is lead by
-            Tommy but its development has been contributed to by other members of the community. The
-            project is not affiliated with Offworld Industries.
+            or aggregations of the data in a number of different formats.
           </>
         )
       },
