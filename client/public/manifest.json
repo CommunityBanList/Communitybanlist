@@ -1,6 +1,6 @@
 {
-  "short_name": "SCBL",
-  "name": "Squad Community Ban List",
+  "short_name": "CBL",
+  "name": "Community Ban List",
   "icons": [
     {
       "src": "favicon.ico",
