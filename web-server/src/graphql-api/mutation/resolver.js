@@ -16,6 +16,8 @@ export default {
       if (args.discordWebhook) await testDiscordWebhook(args.discordWebhook);
 
       // Create export ban list.
+      const t = await ExportBanList.sequelize.transaction();
+      try{
       const exportBanLsit = await ExportBanList.create({
         name: args.name,
         server: args.server,
@@ -26,11 +28,17 @@ export default {
         maxBanAge: args.maxBanAge,
         discordWebhook: args.discordWebhook,
         owner: context.user.id
-      });
+      },{transaction: t});
 
       if (exportBanLsit.type === 'battlemetrics') await exportBanLsit.createBattlemetricsBanList();
-
+      await t.commit();
       return exportBanLsit;
+    } catch (err){
+
+      t.rollback();
+      throw new Error('Oops!');
+    }
+      
     },
 
     updateExportBanList: async (parent, args, context) => {
