@@ -1,12 +1,19 @@
-import axios from 'axios';
-import querystring from 'querystring';
+import { Logger, classifyBanReason } from 'scbl-lib/utils';
 
+import axios from 'axios';
 import { battlemetrics } from 'scbl-lib/apis';
-import { classifyBanReason, Logger } from 'scbl-lib/utils';
+import querystring from 'querystring';
 
 export default class BanFetcher {
   constructor(storeBanFunc) {
     this.storeBanFunc = storeBanFunc;
+
+    axios.interceptors.response.use((response) => {
+      return response;
+    }, (error) => {
+      // Any status codes that falls outside the range of 2xx cause this function to trigger
+      return Promise.reject(error.message);
+    });
   }
 
   async fetchBanList(banList) {
