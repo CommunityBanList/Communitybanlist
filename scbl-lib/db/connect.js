@@ -12,9 +12,9 @@ import {
 
 export default async function () {
   try {
-    console.log('Connecting to the SCBL database...');
+    console.log('Connecting to the CBL database...');
     await sequelize.authenticate();
-    console.log('Connected to the SCBL database.');
+    console.log('Connected to the CBL database.');
     console.log('Synchronizing the models...');
     await Organisation.sync();
     await BanList.sync();
