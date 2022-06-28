@@ -5,12 +5,7 @@ import { BATTLEMETRICS_API_KEY, BATTLEMETRICS_API_RESERVIOR } from '../config.js
 
 if (!BATTLEMETRICS_API_KEY)
   throw new Error('Environmental variable BATTLEMETRICS_API_KEY must be provided.');
-  axios.interceptors.response.use(function (response) {
-    return response;
-  }, function (error) {
-    //add proper Error reporting here, maybe sentry so that the error does at least show up somewhere
-    return Promise.reject(error.message);
-  });
+
 const makeRequest = new Bottleneck({
   reservoir: BATTLEMETRICS_API_RESERVIOR,
   reservoirRefreshAmount: BATTLEMETRICS_API_RESERVIOR,
