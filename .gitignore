@@ -9,3 +9,4 @@ yarn.lock
 # IDEs
 .idea/
 .vs/
+.vscode/
