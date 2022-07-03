@@ -9,7 +9,8 @@ if (!BATTLEMETRICS_API_KEY)
 const makeRequest = new Bottleneck({
   reservoir: BATTLEMETRICS_API_RESERVIOR,
   reservoirRefreshAmount: BATTLEMETRICS_API_RESERVIOR,
-  reservoirRefreshInterval: 60 * 1000
+  reservoirRefreshInterval: 60 * 1000,
+  minTime: 214 // 280/60, stop hitting burst rate limit on BM
 }).wrap(async (method, endpoint, params, data) => {
   return axios({
     method,
