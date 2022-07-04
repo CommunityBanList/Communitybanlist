@@ -3,19 +3,19 @@ const reasons = {
   Glitching: /glitch/i,
   Exploiting: /exploit|剝削|istismar|ausnutz/i,
 
-  Teamkilling: /team ?kill|\btk/i,
+  Teamkilling: /team ?kill|\btk|ITK|[0-9]x?tk|int?tk|ttk/i,
   Trolling: /troll/i,
   Griefing: /grief/i,
   'Wasting Assets': /destroying assets|wast(e|ing)|taxi|israf/i,
   Ghosting: /ghosting/i,
 
   Toxic: /disrespect|flam(e|ing)|harass|insult|language|offensive|rude|toxic|sayg(i|ı)s(i|ı)z|hakaret|irrespect|respektlos|beleidigung/i,
-  'Abusive Language/Hate Speech': /abusive|bigot|derogatory|discriminat|hate ?spe(e|a)ch|homophobi(c|a)|nazi|racial|racism|racist|sexism|sexist|(küfür|kufur)|mal(é|e)diction|種族主義|fluchen/i,
+  'Abusive Language/Hate Speech': /abusive|bigot|derogatory|discriminat|hate ?spe(e|a)ch|homophobi(c|a)|nazi|racial|rac(si|is)m|racist|sexism|sexist|(küfür|kufur)|mal(é|e)diction|種族主義|fluchen|semitism|nigg(a|er)|fag|slur|swastika/i,
 
   AFK: /afk|unassigned/i,
   'Breaking Seeding Rules': /seed/i,
   'Breaking Vehicle Priority Rules': /priority|(ara(ç|c) (kural|ihlali))/i,
-  Camping: /camping/i,
+  Camping: /camping|min(e|ing)/i,
   'Current or Recent VAC Ban': /vac ban/i,
   'Destroying Friendly Assets': /(friendly|dost) (asset|fob|hab)|sabotage/i,
   'Discussing politics': /politic|siyaset/i,
@@ -25,11 +25,12 @@ const reasons = {
   'Locked Squad': /locked squad/i,
   'No SL Kit': /sl kit/i,
   Recruiting: /recruiting/i,
-  'Soloing Vehicles': /crewman|manning|solo/i,
+  'Soloing Vehicles': /crewman|manning|solo|(1|one)(-| )?man/i,
   Spamming: /spam/i,
-  'Squad Baiting': /baiting|creat(?:ed?|ing)(?: a)? squad|pass sl/i,
+  'Squad Baiting': /bai(t|ting)|creat(?:ed?|ing)(?: a)? squad|pass sl|lead it|(of|to) lead|pas(s|sing)( |-)?SL/i,
   'Stealing Assets': /steal|çalma/i,
-  Streamsniping: /streamsniping|yayinc(i|ı)/i
+  Streamsniping: /streamsniping|yayinc(i|ı)/i,
+  'Sharing team info': /shar(e|ing) (ticket|team|hab|fob|info|game|enemy)|ticket (count|sharing)|(info|intel) shar(e|ing)/i
 };
 
 export default function (reason) {
