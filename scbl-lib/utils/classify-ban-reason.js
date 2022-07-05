@@ -3,9 +3,10 @@ const reasons = {
   Glitching: /glitch/i,
   Exploiting: /exploit|剝削|istismar|ausnutz/i,
 
-  Teamkilling: /team ?kill|\btk|ITK|[0-9]x?tk|int?tk|ttk/i,
+  Teamkilling: /team ?kill|\btk|ITK|[0-9]x?tk|int?tk/i,
+
   Trolling: /troll/i,
-  Griefing: /grief/i,
+  Griefing: /gr(ie|ei)f/i,
   'Wasting Assets': /destroying assets|wast(e|ing)|taxi|israf/i,
   Ghosting: /ghosting/i,
 
@@ -30,7 +31,9 @@ const reasons = {
   'Squad Baiting': /bai(t|ting)|creat(?:ed?|ing)(?: a)? squad|pass sl|lead it|(of|to) lead|pas(s|sing)( |-)?SL/i,
   'Stealing Assets': /steal|çalma/i,
   Streamsniping: /streamsniping|yayinc(i|ı)/i,
-  'Sharing team info': /shar(e|ing) (ticket|team|hab|fob|info|game|enemy)|ticket (count|sharing)|(info|intel) shar(e|ing)/i
+  'Sharing team info': /shar(e|ing) (ticket|team|hab|fob|info|game|enemy)|ticket (count|sharing)|(info|intel) shar(e|ing)/i,
+  Advertising: /advert/i,
+
 };
 
 export default function (reason) {
