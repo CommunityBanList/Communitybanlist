@@ -10,15 +10,15 @@ const reasons = {
   'Wasting Assets': /destroying assets|wast(e|ing)|taxi|israf/i,
   Ghosting: /ghosting/i,
 
-  Toxic: /disrespect|flam(e|ing)|harass|insult|language|offensive|rude|toxic|sayg(i|ı)s(i|ı)z|hakaret|irrespect|respektlos|beleidigung/i,
+  Toxic: /disrespect|flam(e|ing)|har(r)?as(s)?|insult|language|offensive|rude|toxic|sayg(i|ı)s(i|ı)z|hakaret|irrespect|respektlos|beleidigung/i,
   'Abusive Language/Hate Speech': /abusive|bigot|derogatory|discriminat|hate ?spe(e|a)ch|homophobi(c|a)|nazi|racial|rac(si|is)m|racist|sexism|sexist|(küfür|kufur)|mal(é|e)diction|種族主義|fluchen|semitism|nigg(a|er)|fag|slur|swastika/i,
 
   AFK: /afk|unassigned/i,
   'Breaking Seeding Rules': /seed/i,
-  'Breaking Vehicle Priority Rules': /priority|(ara(ç|c) (kural|ihlali))/i,
+  'Breaking Vehicle Priority Rules': /priority|(ara(ç|c) (kural|ihlali))|(vic|vehicle|asset) (name )?claim|claim rule/i,
   Camping: /camping|min(e|ing)/i,
   'Current or Recent VAC Ban': /vac ban/i,
-  'Destroying Friendly Assets': /(friendly|dost) (asset|fob|hab)|sabotage/i,
+  'Destroying Friendly Assets': /(friendly|dost) (asset|fob|hab)|sabotage|asset destruct/i,
   'Discussing politics': /politic|siyaset/i,
   'Helicopter Ramming': /ramming/i,
   Hindering: /hindering/i,
@@ -32,7 +32,8 @@ const reasons = {
   'Stealing Assets': /steal|çalma/i,
   Streamsniping: /streamsniping|yayinc(i|ı)/i,
   'Sharing team info': /shar(e|ing) (ticket|team|hab|fob|info|game|enemy)|ticket (count|sharing)|(info|intel) shar(e|ing)/i,
-  Advertising: /advert/i,
+  Advertising: /advertising/i,
+  Ableism: /ableis(t|m)/i
 
 };
 
