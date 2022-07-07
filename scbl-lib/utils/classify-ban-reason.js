@@ -20,7 +20,7 @@ const reasons = {
   'Current or Recent VAC Ban': /vac ban/i,
   'Discussing politics': /politi(c|k|s)|siyaset/i,
   'Helicopter Ramming': /(ge)?ramm(ing|en|t)/i,
-  Hindering: /(be)?hinder(ing|ed|t|ung)/i,
+  Hindering: /(be|ver)?hinder(ing|ed|t|ung)/i,
   Impersonation: /impersonat|ausge(ge)?ben/i,
   'Locked Squad': /(locked|geschlossenes) squad/i,
   'No SL Kit': /sl kit/i,
