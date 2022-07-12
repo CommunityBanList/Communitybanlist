@@ -6,11 +6,9 @@ import Search from './pages/search.js';
 import RecentBans from './pages/recent-bans.js';
 import MostHarmfulPlayers from './pages/most-harmful-players.js';
 import MostHarmfulPlayersThisMonth from './pages/most-harmful-players-this-month.js';
-import Insights from './pages/insights.js';
 
 import EditExportBanList from './pages/create-export-ban-list.js';
 import ExportBanLists from './pages/export-ban-lists.js';
-import CommunityMonitor from './pages/community-monitor.js';
 
 import BecomeAPartnerOrganisation from './pages/become-a-partner-organisation.js';
 
@@ -65,12 +63,6 @@ const routes = [
     login: false,
     component: MostHarmfulPlayersThisMonth
   },
-  {
-    path: '/insights',
-    exact: true,
-    login: false,
-    component: Insights
-  },
 
   {
     path: '/export-ban-lists/:id',
@@ -83,12 +75,6 @@ const routes = [
     exact: true,
     login: true,
     component: ExportBanLists
-  },
-  {
-    path: '/community-monitor',
-    exact: true,
-    login: false,
-    component: CommunityMonitor
   },
 
   {

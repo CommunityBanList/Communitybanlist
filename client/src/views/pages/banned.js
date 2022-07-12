@@ -164,11 +164,11 @@ function Foreword(props) {
           </p>
           <p>
             CommunityBanList.com is dedicated to helping Our Partners create healthy communities
-            that everyone can enjoy, including players that were previously harmful to their community
-            and have since reformed. Therefore, we are keen to assist players in being able to
-            access our partner community without CommunityBanList.com limiting where they can
-            and cannot play. However, there are limits in what we can do to assist these players due
-            to our strict operating procedures.
+            that everyone can enjoy, including players that were previously harmful to their
+            community and have since reformed. Therefore, we are keen to assist players in being
+            able to access our partner community without CommunityBanList.com limiting where they
+            can and cannot play. However, there are limits in what we can do to assist these players
+            due to our strict operating procedures.
           </p>
           <p>
             The information provided on the following pages will give you more information on
@@ -206,24 +206,22 @@ function WhatIsCommunityBanList(props) {
             CommunityBanList.com is a community-led project that aims to protect our partner
             communities integrity through collaboration and information sharing. It is{' '}
             <strong>not</strong> affiliated with Offworld Industries, the creators of Squad, and
-            they have little to no influence in regards to how CommunityBanList.com is
-            operated.
+            they have little to no influence in regards to how CommunityBanList.com is operated.
           </p>
           <h6>How Does It Work?</h6>
           <p>
-            CommunityBanList.com works with a number of "partner organisations", who are
-            gaming communities that provide us with access to their ban lists.
-
-            At regular intervals, our fully automated system downloads a copy of the bans on their
-            ban lists and stores them in our database. We then provide others with access to the data
-            in our database via this website, Discord bots and other channels.
+            CommunityBanList.com works with a number of "partner organisations", who are gaming
+            communities that provide us with access to their ban lists. At regular intervals, our
+            fully automated system downloads a copy of the bans on their ban lists and stores them
+            in our database. We then provide others with access to the data in our database via this
+            website, Discord bots and other channels.
           </p>
           <h6>Only Facts!</h6>
           <p>
-            CommunityBanList.com only shares facts regarding players based on the bans we
-            import from our partner organisations' ban lists and we do not make or share opinions
-            based on the bans we import. Therefore, we will always share the bans we import to our
-            users regardless of whether we think the ban is or isn't valid and will only ever remove
+            CommunityBanList.com only shares facts regarding players based on the bans we import
+            from our partner organisations' ban lists and we do not make or share opinions based on
+            the bans we import. Therefore, we will always share the bans we import to our users
+            regardless of whether we think the ban is or isn't valid and will only ever remove
             players/bans we share when our partner organisations remove them from their ban lists.
             As a result, there is not much we can do to assist players who are listed or who have
             been banned by our system.
@@ -255,25 +253,24 @@ function GettingUnlistedFromCommunityBanList(props) {
         <Col>
           <h3 className="text-center">Getting unlisted from CommunityBanList.com</h3>
           <p>
-            If a player has been listed on our website, it does not necessarily mean that
-            they have been banned from all our partner organisation. 
-            It only means that we have imported a ban against them from one of our 
-            partner organisations.
+            If a player has been listed on our website, it does not necessarily mean that they have
+            been banned from all our partner organisation. It only means that we have imported a ban
+            against them from one of our partner organisations.
           </p>
           <p>
-            As previously mentioned, CommunityBanList.com only shares facts regarding
-            players based on the bans we import from our partner organisations' ban lists and will
-            only ever remove players/bans we share when our partner organisations remove them from
-            their ban lists. As it is unlikely that partner organisation will delete the bans from
-            your history it is unlikely that you will be unlisted from CommunityBanList.com
-            However, partner organisations may agree to turn some of your active bans to expired bans.
+            As previously mentioned, CommunityBanList.com only shares facts regarding players based
+            on the bans we import from our partner organisations' ban lists and will only ever
+            remove players/bans we share when our partner organisations remove them from their ban
+            lists. As it is unlikely that partner organisation will delete the bans from your
+            history it is unlikely that you will be unlisted from CommunityBanList.com However,
+            partner organisations may agree to turn some of your active bans to expired bans.
           </p>
           {props.steamUser && props.steamUser.bans.length === 0 && (
             <>
               <h6>Partner organisations to Contact</h6>
               <p>
-                Fortunately, you are not listed on our website and therefore do not
-                need to contact any partner organisations.
+                Fortunately, you are not listed on our website and therefore do not need to contact
+                any partner organisations.
               </p>
             </>
           )}
@@ -281,9 +278,8 @@ function GettingUnlistedFromCommunityBanList(props) {
             <>
               <h6>Partner organisations to Contact</h6>
               <p>
-                To be unlisted from CommunityBanList.com you should contact the following
-                partner organisations. You may click their names to get a link to their Discord
-                server.
+                To be unlisted from CommunityBanList.com you should contact the following partner
+                organisations. You may click their names to get a link to their Discord server.
               </p>
               <ul>
                 {[
@@ -325,11 +321,11 @@ function GettingUnbannedFromCommunityBanList(props) {
         <Col>
           <h3 className="text-center">Getting unbanned from the CommunityBanList.com</h3>
           <p>
-            Partner Organisations may opt to use an export ban list to protect their
-            community. If you have been kicked from a server with a reason relating to our website 
-            then it means that you have probably met the criteria to be listed on
-            one of these export ban lists. Below we will explain these criteria and explain how you
-            can attempt to get removed from our Partner's export ban lists.
+            Partner Organisations may opt to use an export ban list to protect their community. If
+            you have been kicked from a server with a reason relating to our website then it means
+            that you have probably met the criteria to be listed on one of these export ban lists.
+            Below we will explain these criteria and explain how you can attempt to get removed from
+            our Partner's export ban lists.
           </p>
           <h6>Criteria System</h6>
           <p>
@@ -337,8 +333,8 @@ function GettingUnbannedFromCommunityBanList(props) {
             creating an export ban list. Bans listed on our website will contribute a number of
             points which can be configured to be different depending on whether they were are active
             or expired, their age and who's ban list they belong to. Once the total number of points
-            a player has exceeds the configurable threshold, they will be added to the export ban list
-            and banned from that partner's servers as a result.
+            a player has exceeds the configurable threshold, they will be added to the export ban
+            list and banned from that partner's servers as a result.
           </p>
           <p>
             Consider the following example using our default points. Bob has 2 active bans that
@@ -346,10 +342,8 @@ function GettingUnbannedFromCommunityBanList(props) {
             total number of points 10 which exceeds the default threshold of 9 and therefore Bob
             will be added to the export ban list.
           </p>
-          <h6>Getting Unbanned from  CommunityBanList.com</h6>
-          <p>
-            There are a number of different ways of getting unbanned from CommunityBanList.com:
-          </p>
+          <h6>Getting Unbanned from CommunityBanList.com</h6>
+          <p>There are a number of different ways of getting unbanned from CommunityBanList.com:</p>
           <ul className="font-weight-light">
             <li>
               Appeal the bans listed on our website so that you no longer meet the criteria of our
@@ -357,13 +351,12 @@ function GettingUnbannedFromCommunityBanList(props) {
             </li>
             <li>
               Ask the server you wish to play on to make an exception for you. Some servers have the
-              ability to do this if they are importing one of our export ban lists via an admin tool known as
-              Battlemetrics.
+              ability to do this if they are importing one of our export ban lists via an admin tool
+              known as Battlemetrics.
             </li>
             <li>
-              Play on another server. Only a small number of Partners use CommunityBanList.com
-              and therefore there should be a wide range of others servers that you can
-              play on.
+              Play on another server. Only a small number of Partners use CommunityBanList.com and
+              therefore there should be a wide range of others servers that you can play on.
             </li>
           </ul>
           {props.steamUser && props.steamUser.bans.edges.length > 0 && (
@@ -446,9 +439,10 @@ function FurtherHelp(props) {
         <Col>
           <h3 className="text-center">Further Help</h3>
           <p>
-            Thank you <strong>{props.steamUser?.name || ''}</strong> for taking the time to read through the information
-            we have provided. If you require further assistance, please read our <Link to="/faq">FAQ</Link> and then
-            seek further help on our <a href={DISCORD_INVITE}>Discord</a>.
+            Thank you <strong>{props.steamUser?.name || ''}</strong> for taking the time to read
+            through the information we have provided. If you require further assistance, please read
+            our <Link to="/faq">FAQ</Link> and then seek further help on our{' '}
+            <a href={DISCORD_INVITE}>Discord</a>.
           </p>
         </Col>
       </Row>
