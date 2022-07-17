@@ -116,7 +116,7 @@ export default class BanFetcher {
           bans.push({
             id: `${banList.id},${ban.attributes.uid}`,
 
-            steamUser,
+            steamUser: steamUser.trim(),
 
             created: created,
             expires: expires,
