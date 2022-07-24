@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import md5 from 'md5';
 
 import { Card, CardBody, Container } from 'reactstrap';
@@ -17,10 +16,10 @@ const sections = [
         answer: (
           <>
             CommunityBanList.com is a community-led project that aims to protect the partner
-            communities through collaboration and information sharing. It does this by
-            importing ban information from various popular servers, known as our partner
-            organisations, into a database and providing functionality to search and export the data
-            or aggregations of the data in a number of different formats.
+            communities through collaboration and information sharing. It does this by importing ban
+            information from various popular servers, known as our partner organisations, into a
+            database and providing functionality to search and export the data or aggregations of
+            the data in a number of different formats.
           </>
         )
       },
@@ -28,9 +27,9 @@ const sections = [
         question: 'How often is CommunityBanList.com updated?',
         answer: (
           <>
-            CommunityBanList.com updates automatically every 6 hours, however, some
-            information is updated less frequently. Steam user profile information is updated every
-            7 days or when we import new or updated bans belonging to that user.
+            CommunityBanList.com updates automatically every 6 hours, however, some information is
+            updated less frequently. Steam user profile information is updated every 7 days or when
+            we import new or updated bans belonging to that user.
           </>
         )
       },
@@ -38,9 +37,9 @@ const sections = [
         question: 'What are "reputation points"?',
         answer: (
           <>
-            "Points" is a term you will frequently hear in reference to the CommunityBanList.com. 
-            Points are used to represent how bad a reputation a player has based on bans they
-            have on our partner organisation's ban lists. By default, active and expired bans will
+            "Points" is a term you will frequently hear in reference to the CommunityBanList.com.
+            Points are used to represent how bad a reputation a player has based on bans they have
+            on our partner organisation's ban lists. By default, active and expired bans will
             contribute 3 and 1 points respectively. Only one active ban per ban list is counted.
           </>
         )
@@ -49,9 +48,8 @@ const sections = [
         question: 'What is a "risk rating"?',
         answer: (
           <>
-            "Risk rating" is 0-10 rating used by our partner communities to approximate how harmful 
-            a potential player may be. 
-            The algorithm used to calculate the "risk rating" is still
+            "Risk rating" is 0-10 rating used by our partner communities to approximate how harmful
+            a potential player may be. The algorithm used to calculate the "risk rating" is still
             experimental and is subject to change.
           </>
         )
@@ -61,8 +59,8 @@ const sections = [
         answer: (
           <>
             "Risk ranking" is a ranking of players most at risk of harming our Partner communities.
-            It is based on player's reputation points where rank #1 is the player with
-            the most reputation points and therefore the most likely to harm our Partner communities
+            It is based on player's reputation points where rank #1 is the player with the most
+            reputation points and therefore the most likely to harm our Partner communities
           </>
         )
       },

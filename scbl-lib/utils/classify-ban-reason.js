@@ -7,15 +7,19 @@ const reasons = {
 
   Trolling: /troll/i,
   Griefing: /gr(ie|ei)f/i,
-  'Wasting Assets': /destroying assets|wast(e|ing)|taxi|israf|(friendly|dost) (asset|fob|hab)|sabotage|asset destruct|zerstör|verschwend|eigene(s)? (radio|fob|vehikel|fahrzeug|hab|hub)/i,
+  'Wasting Assets':
+    /destroying assets|wast(e|ing)|taxi|israf|(friendly|dost) (asset|fob|hab)|sabotage|asset destruct|zerstör|verschwend|eigene(s)? (radio|fob|vehikel|fahrzeug|hab|hub)/i,
   Ghosting: /ghosting/i,
 
-  Toxic: /disrespect|flam(e|ing)|har(r)?as(s)?|insult|language|offensive|rude|toxic|sayg(i|ı)s(i|ı)z|hakaret|irrespect|respektlos|beleidig(ung|en)/i,
-  'Abusive Language/Hate Speech': /abusive|bigot|derogatory|discriminat|hate ?spe(e|a)ch|(homo|trans)(-| )?phobi|nazi|racial|rac(si|is)m|racist|sexism|sexist|(küfür|kufur)|mal(é|e)diction|種族主義|fluchen|semitism|nigg(a|er)|fag|slur|swastika|schimpfw(o|ö)rt|rassis(t|m)|missbr(a|ä)uch|(f|n)(-| )?(word|bomb)/i,
+  Toxic:
+    /disrespect|flam(e|ing)|har(r)?as(s)?|insult|language|offensive|rude|toxic|sayg(i|ı)s(i|ı)z|hakaret|irrespect|respektlos|beleidig(ung|en)/i,
+  'Abusive Language/Hate Speech':
+    /abusive|bigot|derogatory|discriminat|hate ?spe(e|a)ch|(homo|trans)(-| )?phobi|nazi|racial|rac(si|is)m|racist|sexism|sexist|(küfür|kufur)|mal(é|e)diction|種族主義|fluchen|semitism|nigg(a|er)|fag|slur|swastika|schimpfw(o|ö)rt|rassis(t|m)|missbr(a|ä)uch|(f|n)(-| )?(word|bomb)/i,
 
   AFK: /afk|unassigned/i,
   'Breaking Seeding Rules': /seed/i,
-  'Breaking Vehicle Priority Rules': /priority|(ara(ç|c) (kural|ihlali))|(vic|vehicle|asset) (name )?claim|claim rule|ignor(ing|ed) claim/i,
+  'Breaking Vehicle Priority Rules':
+    /priority|(ara(ç|c) (kural|ihlali))|(vic|vehicle|asset) (name )?claim|claim rule|ignor(ing|ed) claim/i,
   Camping: /camping|min(e|ing)/i,
   'Current or Recent VAC Ban': /vac ban/i,
   'Discussing politics': /politi(c|k|s)|siyaset/i,
@@ -27,13 +31,14 @@ const reasons = {
   Recruiting: /recruiting|rekrutier/i,
   'Soloing Vehicles': /crewman|manning|solo|(1|one)(-| )?man/i,
   Spamming: /spam/i,
-  'Squad Baiting': /bai(t|ting)|creat(?:ed?|ing)(?: a)? squad|pass sl|lead it|(of|to) lead|pas(s|sing)( |-)?SL/i,
+  'Squad Baiting':
+    /bai(t|ting)|creat(?:ed?|ing)(?: a)? squad|pass sl|lead it|(of|to) lead|pas(s|sing)( |-)?SL/i,
   'Stealing Assets': /steal|çalma|(ge)?st(e|o)hlen/i,
   Streamsniping: /streamsniping|yayinc(i|ı)/i,
-  'Sharing team info': /shar(e|ing) (ticket|team|hab|fob|info|game|enemy)|ticket (count|sharing)|(info|intel) shar(e|ing)/i,
+  'Sharing team info':
+    /shar(e|ing) (ticket|team|hab|fob|info|game|enemy)|ticket (count|sharing)|(info|intel) shar(e|ing)/i,
   Advertising: /advertising|werb(ung|en)/i,
   Ableism: /ableis(t|m)/i
-
 };
 
 export default function (reason) {

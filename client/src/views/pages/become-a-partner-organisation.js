@@ -17,7 +17,7 @@ export default function () {
               </div>
               <h6 className="text-success text-uppercase">Become a Partner Organisation</h6>
               <p className="description mt-2">
-                Join the fight against harmful players by contributing ban information to 
+                Join the fight against harmful players by contributing ban information to
                 CommunityBanList.com!
               </p>
             </CardBody>
@@ -25,8 +25,9 @@ export default function () {
               <h5>Introduction to Partner Organisations</h5>
               <p>
                 Partner organisations are gaming communities that contribute ban information from
-                their server's ban lists to the CommunityBanList.com database. Any Gaming 
-                community can become a partner organisation providing they apply and are accepted on our discord
+                their server's ban lists to the CommunityBanList.com database. Any Gaming community
+                can become a partner organisation providing they apply and are accepted on our
+                discord
               </p>
               <p>
                 Becoming a partner organisation requires very little effort. We simply request the
@@ -44,15 +45,14 @@ export default function () {
               <p>
                 There are currently no benefits to being a partner organisation, however, everyone
                 benefits from our partner organisations as the more partner organisations that
-                contribute information on players the more effective CommunityBanList.com
-                becomes in protecting the integrity of our partner's communities so, please consider
+                contribute information on players the more effective CommunityBanList.com becomes in
+                protecting the integrity of our partner's communities so, please consider
                 contributing to thank others for their contributions.
               </p>
               <h5>Form</h5>
               <p>
                 If you are interested in becoming a partner organisation, please provide the
-                following information on our{' '}
-                <a href={DISCORD_INVITE}>Discord</a>:
+                following information on our <a href={DISCORD_INVITE}>Discord</a>:
               </p>
               <pre>
                 <code>
@@ -87,8 +87,8 @@ export default function () {
               </p>
               <br />
               <p>
-                If you wish to stop contributing as a partner organisation, please contact us
-                 on our <a href={DISCORD_INVITE}>Discord</a>.
+                If you wish to stop contributing as a partner organisation, please contact us on our{' '}
+                <a href={DISCORD_INVITE}>Discord</a>.
               </p>
             </CardBody>
           </Card>

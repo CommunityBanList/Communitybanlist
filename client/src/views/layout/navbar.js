@@ -152,18 +152,6 @@ class DemoNavbar extends React.Component {
                             </p>
                           </Media>
                         </Media>
-                        <Media className="d-flex align-items-center" tag={Link} to="/insights">
-                          <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                            <i className="fa fa-chart-bar" />
-                          </div>
-                          <Media body className="ml-3">
-                            <h5 className="heading text-primary mb-md-1">Insights</h5>
-                            <p className="description d-none d-md-inline-block mb-0">
-                              Get insights on how healthy game communities are by exploring trends
-                              in our data.
-                            </p>
-                          </Media>
-                        </Media>
                       </div>
                     </DropdownMenu>
                   </UncontrolledDropdown>
@@ -188,21 +176,6 @@ class DemoNavbar extends React.Component {
                               Protect your Squad server with our configurable export ban lists that
                               preemptively ban the most harmful players from your server before they
                               have the chance to cause any harm.
-                            </p>
-                          </Media>
-                        </Media>
-                        <Media
-                          className="d-flex align-items-center"
-                          tag={Link}
-                          to="/community-monitor"
-                        >
-                          <div className="icon icon-shape bg-gradient-info rounded-circle text-white">
-                            <i className="fa fa-desktop" />
-                          </div>
-                          <Media body className="ml-3">
-                            <h6 className="heading text-info mb-md-1">Community Monitor</h6>
-                            <p className="description d-none d-md-inline-block mb-0">
-                              Monitor the integrity of your community using the data we collect.
                             </p>
                           </Media>
                         </Media>
@@ -246,8 +219,8 @@ class DemoNavbar extends React.Component {
                           <Media body className="ml-3">
                             <h6 className="heading text-github mb-md-1">GitHub</h6>
                             <p className="description d-none d-md-inline-block mb-0">
-                              Community Ban List is an open source project anyone can
-                              contribute to. Find out more on our GitHub!
+                              Community Ban List is an open source project anyone can contribute to.
+                              Find out more on our GitHub!
                             </p>
                           </Media>
                         </Media>
@@ -283,18 +256,15 @@ class DemoNavbar extends React.Component {
                             </h6>
                           </Media>
                         </Media>
-                        <Media
-                          className="d-flex align-items-center"
-                          tag={Link}
-                          to="/banned"
-                        >
+                        <Media className="d-flex align-items-center" tag={Link} to="/banned">
                           <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
                             <i className="fa fa-life-ring" />
                           </div>
                           <Media body className="ml-3">
                             <h6 className="heading text-warning mb-md-1">I'm banned, what now?</h6>
                             <p className="description d-none d-md-inline-block mb-0">
-                              Get information on how to get unlisted from or unbanned by Community Ban List.com
+                              Get information on how to get unlisted from or unbanned by Community
+                              Ban List.com
                             </p>
                           </Media>
                         </Media>

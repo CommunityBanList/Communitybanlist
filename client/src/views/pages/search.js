@@ -1,16 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import {
-  Alert,
-  Card,
-  CardBody,
-  Col,
-  Container,
-  Row,
-  Table,
-  UncontrolledTooltip
-} from 'reactstrap';
+import { Alert, Card, CardBody, Col, Container, Row, Table, UncontrolledTooltip } from 'reactstrap';
 
 import { gql, useQuery } from '@apollo/client';
 
@@ -230,9 +221,9 @@ export default function (props) {
                           delay={0}
                           target="tooltip-reason-active"
                         >
-                          The ban reasons shown on CommunityBanList.com are based on
-                          keywords found in the reason and notes listed on partner organisations' ban
-                          lists. We cannot guarantee that the reasons displayed reflect the true reason for
+                          The ban reasons shown on CommunityBanList.com are based on keywords found
+                          in the reason and notes listed on partner organisations' ban lists. We
+                          cannot guarantee that the reasons displayed reflect the true reason for
                           the ban. Please see our FAQ for more information.
                         </UncontrolledTooltip>
                       </th>
@@ -247,10 +238,10 @@ export default function (props) {
                           delay={0}
                           target="tooltip-time-active"
                         >
-                          The ban times shown on CommunityBanList.com are based on the dates
-                          listed on partner organisations' ban lists. In the case of remote ban lists,
-                          where ban creation dates are not documented, the time shown is the time when we
-                          first imported the ban.
+                          The ban times shown on CommunityBanList.com are based on the dates listed
+                          on partner organisations' ban lists. In the case of remote ban lists,
+                          where ban creation dates are not documented, the time shown is the time
+                          when we first imported the ban.
                         </UncontrolledTooltip>
                       </th>
                     </tr>
@@ -259,12 +250,16 @@ export default function (props) {
                     {data.steamUser.activeBans.edges.map((edge, key) => (
                       <tr key={key}>
                         <td>
-                          <a href={edge.node.banList.organisation.discord} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={edge.node.banList.organisation.discord}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             {edge.node.banList.organisation.name}
                           </a>
                         </td>
                         <td>{edge.node.banList.name}</td>
-                        <td style={{whiteSpace: 'pre-wrap' }}>
+                        <td style={{ whiteSpace: 'pre-wrap' }}>
                           {edge.node.reason.replace(/, /g, '\n')}
                         </td>
                         <td>
@@ -302,10 +297,10 @@ export default function (props) {
                           delay={0}
                           target="tooltip-reason-expired"
                         >
-                          The ban reasons shown on the CommunityBanList are based on
-                          keywords found in the reason and notes supplied by contributing servers.
-                          We cannot guarantee that the reasons displayed reflect the true reason for
-                          the ban. Please see our FAQ for more information.
+                          The ban reasons shown on the CommunityBanList are based on keywords found
+                          in the reason and notes supplied by contributing servers. We cannot
+                          guarantee that the reasons displayed reflect the true reason for the ban.
+                          Please see our FAQ for more information.
                         </UncontrolledTooltip>
                       </th>
                       <th>
@@ -319,10 +314,10 @@ export default function (props) {
                           delay={0}
                           target="tooltip-time-expired"
                         >
-                          The ban times shown on CommunityBanList.com are based on the dates
-                          listed on partner organisations' ban lists. In the case of remote ban lists,
-                          where ban creation dates are not documented, the time shown is the time when we
-                          first imported the ban.
+                          The ban times shown on CommunityBanList.com are based on the dates listed
+                          on partner organisations' ban lists. In the case of remote ban lists,
+                          where ban creation dates are not documented, the time shown is the time
+                          when we first imported the ban.
                         </UncontrolledTooltip>
                       </th>
                     </tr>
@@ -331,12 +326,16 @@ export default function (props) {
                     {data.steamUser.expiredBans.edges.map((edge, key) => (
                       <tr key={key}>
                         <td>
-                          <a href={edge.node.banList.organisation.discord} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={edge.node.banList.organisation.discord}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             {edge.node.banList.organisation.name}
                           </a>
                         </td>
                         <td>{edge.node.banList.name}</td>
-                        <td style={{whiteSpace: 'pre-wrap' }}>
+                        <td style={{ whiteSpace: 'pre-wrap' }}>
                           {edge.node.reason.replace(/, /g, '\n')}
                         </td>
                         <td>
@@ -356,15 +355,19 @@ export default function (props) {
                 <CardBody>
                   <Alert color="danger">
                     <i className="fas fa-exclamation-circle mr-2" />
-                    <strong>
-                      Disclaimer
-                    </strong>
-                    <br/>
-                    The ban information contained on this page has been imported from the ban lists of our partner
-                    organisations. The Community Ban List has <strong>not</strong> modified any of this
-                    information, other than where explicitly stated, or made any judgement of the validity of the bans.
-                    For more information on how to get unlisted from/unbanned by the Community Ban List, please
-                    see our <Link to={`/banned/${data.steamUser.id}`}>"I'm banned, what now?" information page</Link>.
+                    <strong>Disclaimer</strong>
+                    <br />
+                    The ban information contained on this page has been imported from the ban lists
+                    of our partner organisations. The Community Ban List has <strong>
+                      not
+                    </strong>{' '}
+                    modified any of this information, other than where explicitly stated, or made
+                    any judgement of the validity of the bans. For more information on how to get
+                    unlisted from/unbanned by the Community Ban List, please see our{' '}
+                    <Link to={`/banned/${data.steamUser.id}`}>
+                      "I'm banned, what now?" information page
+                    </Link>
+                    .
                   </Alert>
                 </CardBody>
               </>

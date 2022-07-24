@@ -41,8 +41,8 @@ export default function () {
                     harmful players.
                   </h1>
                   <p className="lead text-white">
-                    CommunityBanList.com aims to protect our Partner Organisations
-                    through collaboration and information sharing.
+                    CommunityBanList.com aims to protect our Partner Organisations through
+                    collaboration and information sharing.
                   </p>
                   <SteamUserSearchBox className="mt-5" frontpageVersion={true} />
                 </Col>
@@ -86,9 +86,6 @@ export default function () {
                         <Badge color="primary" pill className="mr-1">
                           Recent Bans
                         </Badge>
-                        <Badge color="primary" pill className="mr-1">
-                          Insights
-                        </Badge>
                       </div>
                       <Button className="mt-4" color="primary" href="#explore">
                         Learn more
@@ -110,9 +107,6 @@ export default function () {
                       <div>
                         <Badge color="info" pill className="mr-1">
                           Export Ban Lists
-                        </Badge>
-                        <Badge color="info" pill className="mr-1">
-                          Community Monitor
                         </Badge>
                       </div>
                       <Button className="mt-4" color="info" href="#benefit">
@@ -165,8 +159,8 @@ export default function () {
                 <h3>Explore</h3>
                 <p>
                   Our database contains information on over 47,000 bans and 34,000 banned players
-                  from various popular Partner Organisations. We regularly update the database to allow you
-                  to proactively defend your server from harmful players.
+                  from various popular Partner Organisations. We regularly update the database to
+                  allow you to proactively defend your server from harmful players.
                 </p>
                 <ul className="list-unstyled mt-5">
                   <li className="py-2">
@@ -205,18 +199,6 @@ export default function () {
                       </div>
                     </div>
                   </li>
-                  <li className="py-2">
-                    <div className="d-flex align-items-center">
-                      <div>
-                        <Badge className="badge-circle mr-3" color="primary">
-                          <i className="fa fa-chart-bar" />
-                        </Badge>
-                      </div>
-                      <div>
-                        <h6 className="mb-0">Get insights on how healthy the community is.</h6>
-                      </div>
-                    </div>
-                  </li>
                 </ul>
               </div>
             </Col>
@@ -240,8 +222,8 @@ export default function () {
               <Card className="shadow shadow-lg--hover my-5">
                 <CardBody>
                   <blockquote className="blockquote font-italic mb-0">
-                    "CommunityBanList.com provides us with a valuable source of intel that
-                    allows us to make more informed decisions when banning players from our server."
+                    "CommunityBanList.com provides us with a valuable source of intel that allows us
+                    to make more informed decisions when banning players from our server."
                   </blockquote>
                 </CardBody>
               </Card>
@@ -294,18 +276,6 @@ export default function () {
                   <li className="py-2">
                     <div className="d-flex align-items-center">
                       <div>
-                        <Badge className="badge-circle mr-3" color="info">
-                          <i className="fas fa-desktop" />
-                        </Badge>
-                      </div>
-                      <div>
-                        <h6 className="mb-0">Monitor the integrity of your community.</h6>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="py-2">
-                    <div className="d-flex align-items-center">
-                      <div>
                         <Badge className="badge-circle mr-3" color="discord">
                           <i className="fab fa-discord" />
                         </Badge>
@@ -340,8 +310,8 @@ export default function () {
               <Card className="shadow shadow-lg--hover my-5">
                 <CardBody>
                   <blockquote className="blockquote font-italic mb-0">
-                    "Using CommunityBanList.com allows our admins to spend more time
-                    enjoying the game and less time dealing with players trying to harm our server."
+                    "Using CommunityBanList.com allows our admins to spend more time enjoying the
+                    game and less time dealing with players trying to harm our server."
                   </blockquote>
                 </CardBody>
               </Card>
@@ -425,8 +395,8 @@ export default function () {
               <Card className="shadow shadow-lg--hover my-5">
                 <CardBody>
                   <blockquote className="blockquote font-italic mb-0">
-                    "Contributing to CommunityBanList.com is easy and we're happy to know
-                    that our contributions are helping to protect our Partners and their communities."
+                    "Contributing to CommunityBanList.com is easy and we're happy to know that our
+                    contributions are helping to protect our Partners and their communities."
                   </blockquote>
                 </CardBody>
               </Card>
