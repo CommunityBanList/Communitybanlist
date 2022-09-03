@@ -41,14 +41,19 @@ const reasons = {
   Ableism: /ableis(t|m)/i
 };
 
-export default function (reason) {
+export default function (...reason) {
   const classifiedReasons = [];
 
   for (const [type, regex] of Object.entries(reasons)) {
-    if (regex.test(reason)) classifiedReasons.push(type);
+    if (regex.test(reason[0])) classifiedReasons.push(type);
   }
 
-  classifiedReasons.sort();
+if(classifiedReasons.length===0 && reason.length > 1) {
+  for (const [type, regex] of Object.entries(reasons)) {
+    if (regex.test(reason[1])) classifiedReasons.push(type);
+  }
 
+}
+  classifiedReasons.sort();
   return classifiedReasons.length > 0 ? classifiedReasons.join(', ') : 'Unknown';
 }
