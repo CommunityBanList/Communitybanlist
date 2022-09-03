@@ -13,7 +13,6 @@ async function main() {
       console.log(old, ban.reason);
       console.log(`Updating Ban: ${ban.reason}`);
       await ban.save();
-
     }
   }
 }
