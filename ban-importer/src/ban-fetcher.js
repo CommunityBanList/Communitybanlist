@@ -37,10 +37,12 @@ export default class BanFetcher {
     // Loop over each line of the ban file.
     for (const line of data.split('\n')) {
       // Split the line to get the steam user, expiry data and reason.
-      let [match, steamUser, expires, reason] = line.match(/([0-9]{17}):([0-9]+) ?\/\/(.+)/);
-
+      const match = line.match(/([0-9]{17}):([0-9]+) ?\/\/(.+)/);
+    
       // Skip the line if there's no match, i.e. no ban is contained on the line.
       if (!match) continue;
+
+      let [, steamUser, expires, reason] = match;
 
       // Turn the expiry data into a date object or null for perm bans.
       expires = parseInt(expires);
