@@ -57,7 +57,7 @@ export default class BanFetcher {
 
         reason: classifyBanReason(reason),
         rawReason: reason,
-
+        
         banList: banList
       });
     }
@@ -124,7 +124,7 @@ export default class BanFetcher {
 
             reason: classifyBanReason(ban.attributes.reason,ban.attributes.note),
             rawReason: ban.attributes.reason,
-            rawNotes: ban.attributes.note,
+            rawNote: ban.attributes.note,
 
             banList: banList
           });
