@@ -18,6 +18,9 @@ export default class BanFetcher {
       case 'battlemetrics':
         await this.fetchBattlemetricsBanList(banList);
         break;
+      case 'custom':
+        await this.fetchCustomBanList(banList);
+        break;
       default:
         throw new Error('Unsupported ban list type.');
     }
@@ -143,6 +146,55 @@ export default class BanFetcher {
       } catch (err) {
         Logger.verbose('BanFetcher', 1, `Failed to fetch ban list (ID: ${banList.id}): `, err);
       }
+    }
+  }
+
+  async fetchCustomBanList(banList) {
+     // Fetch ban data.
+     Logger.verbose(
+      'BanFetcher',
+      1,
+      `Fetching custom ban list data for ban list (ID: ${banList.id})...`
+    );
+
+    try {
+      const { data } = await axios.get(banList.source);
+      
+      if (!Array.isArray(data)) {
+        throw new Error('Custom ban list is not an array');
+      }
+
+      const bans = [];
+
+      for (const ban of data) {
+
+        // Skip the object if it's missing a steamID or reason.
+        if (ban.steamID === undefined || !ban.steamID.match(/[0-9]{17}/) || !ban.reason) continue; 
+
+        // Turn the dates into date objects or null if permanent ban.
+        const created = ban.created ? new Date(ban.created) : null;
+        const expires = ban.expires ? new Date(ban.expires) : null;
+
+        // Store the new ban.
+        bans.push({
+          id: `${banList.id},${ban.steamID},${expires ? expires.getTime() : 'null'}`,
+
+          steamUser: ban.steamID,
+
+          created: created,
+          expires: expires,
+          expired: !(expires === null || expires.getTime() > Date.now()),
+
+          reason: classifyBanReason(ban.reason),
+          rawReason: ban.reason,
+
+          banList: banList
+        });
+      }
+
+      this.storeBanFunc(bans);
+    } catch (err) {
+      Logger.verbose('BanFetcher', 1, `Failed to fetch ban list (ID: ${banList.id}): `, err);
     }
   }
 }
