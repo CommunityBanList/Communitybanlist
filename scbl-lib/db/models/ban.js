@@ -30,6 +30,9 @@ export default withRelayPagination({ primaryKeyField: 'id' })(
     },
     rawReason: {
       type: DataTypes.TEXT
+    },
+    rawNote: {
+      type: DataTypes.TEXT
     }
   })
 );

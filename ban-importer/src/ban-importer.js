@@ -60,6 +60,7 @@ export default class BanImporter {
           expired: importedBan.expired,
           reason: importedBan.reason,
           rawReason: importedBan.rawReason,
+          rawNote: importedBan.rawNote,
           steamUser: importedBan.steamUser,
           banList: importedBan.banList.id
         }
@@ -92,6 +93,7 @@ export default class BanImporter {
       ban.expired = importedBan.expired;
       ban.reason = importedBan.reason;
       ban.rawReason = importedBan.rawReason;
+      ban.rawNote = importedBan.rawNote;
 
       // Save the updated information.
       await ban.save();

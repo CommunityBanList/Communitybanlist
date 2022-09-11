@@ -8,7 +8,7 @@ async function main() {
   console.log(`${bans.length} Unknown Bans To Classify`);
   for (const ban of bans) {
     const old = ban.reason;
-    ban.reason = classifyBanReason(ban.rawReason);
+    ban.reason = classifyBanReason(ban.rawReason, ban.rawNote);
     if (old !== ban.reason) {
       console.log(old, ban.reason);
       console.log(`Updating Ban: ${ban.reason}`);

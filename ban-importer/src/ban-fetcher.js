@@ -59,7 +59,7 @@ export default class BanFetcher {
 
         reason: classifyBanReason(reason),
         rawReason: reason,
-
+        
         banList: banList
       });
     }
@@ -124,8 +124,9 @@ export default class BanFetcher {
             expires: expires,
             expired: !(ban.attributes.expires === null || expires.getTime() > Date.now()),
 
-            reason: classifyBanReason(`${ban.attributes.reason} ${ban.attributes.note}`),
-            rawReason: `${ban.attributes.reason} ${ban.attributes.note}`,
+            reason: classifyBanReason(ban.attributes.reason,ban.attributes.note),
+            rawReason: ban.attributes.reason,
+            rawNote: ban.attributes.note,
 
             banList: banList
           });
