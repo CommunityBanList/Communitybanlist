@@ -143,6 +143,7 @@ export default class BanFetcher {
         });
       } catch (err) {
         Logger.verbose('BanFetcher', 1, `Failed to fetch ban list (ID: ${banList.id}): `, err);
+        if(err.response.status === 404){ break;}
       }
     }
   }
