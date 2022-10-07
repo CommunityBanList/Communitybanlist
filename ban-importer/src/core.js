@@ -180,6 +180,7 @@ export default class Core {
         listChangeCount[exportBan.ExportBanList.id].count < DISCORD_ALERT_CAP;
 
     // Update the export bans.
+    let erroringLists = [];
     for (const exportBan of exportBans) {
       Logger.verbose(
         'Core',
@@ -190,15 +191,19 @@ export default class Core {
       );
 
       try {
-        if (exportBan.status === 'TO_BE_CREATED') await Core.createExportBan(exportBan);
-        else await Core.deleteExportBan(exportBan);
+        if(!erroringLists.includes(exportBan.ExportBanList.id)) {
+          if (exportBan.status === 'TO_BE_CREATED')
+            await Core.createExportBan(exportBan);
+          else await Core.deleteExportBan(exportBan);
+        }
       } catch (err) {
+        erroringLists.push(exportBan.ExportBanList.id);
         Logger.verbose(
           'Core',
           1,
           `Failed to ${
             exportBan.status === 'TO_BE_CREATED' ? 'create' : 'delete'
-          } export ban (ID: ${exportBan.id}): `,
+          } export ban (ID: ${exportBan.id}) - Ignoring exports for List ${exportBan.ExportBanList.id} for this run: `,
           err
         );
       }
